@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  core:
+    image: netherlandsbot-core:latest
+    container_name: core
+    volumes:
+    - "./config:/config"
+    - "./moduleconfig:/moduleconfig"
+    ports:
+    - 5555:5555
+    environment:
+    - "HOI_MODULE=YES"
+    - "DICK_MEASURING_CONTEST=YES"
+    - "TCP_MODULE=YES"

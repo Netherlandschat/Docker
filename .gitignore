@@ -1,0 +1,4 @@
+config/
+moduleconfig/
+core/
+*.jar
